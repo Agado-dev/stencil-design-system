@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: flex-end;
+  height: 10px;
+  width: 10px;
+}

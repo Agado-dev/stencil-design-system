@@ -1,0 +1,39 @@
+{
+  "name": "@agado/vue",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Vue 3 components for Agado",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/components.js",
+  "types": "./dist/vue.components.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/components.js",
+      "types": "./dist/vue.components.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build"
+  },
+  "dependencies": {
+    "@agado/components": "workspace:*",
+    "@stencil/vue-output-target": "^0.9.2"
+  },
+  "devDependencies": {
+    "@vue/runtime-core": "^3.5.13",
+    "npm-run-all2": "^7.0.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6",
+    "vite-plugin-dts": "^4.4.0",
+    "vue-tsc": "^2.1.10"
+  },
+  "peerDependencies": {
+    "vue": "3.x.x"
+  }
+}

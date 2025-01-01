@@ -1,0 +1,8 @@
+packages:
+  - packages/agado-components
+  - packages/angular-components
+  - packages/vue-components
+  - packages/react-components
+  - apps/agado-angular
+  - apps/agado-vue
+  - apps/agado-react
